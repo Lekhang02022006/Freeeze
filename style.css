@@ -145,7 +145,7 @@ footer p a {
 .back-to-top {
   right: 10px;
   bottom: 5px;
-  width: 40px;
+  width: 50px;
   position: fixed;
   background-color: #ed4190;
   z-index: 100;
@@ -179,4 +179,53 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   height: 24px;
+  align-items: center;
+  text-transform: inherit;
+}
+
+/* Bai4.4 Gioi Thieu */
+.post {
+  display: flex;
+  gap: 1%;
+  align-items: flex-start;
+}
+
+.media {
+  width: 30%;
+}
+
+.content {
+  width: 69%;
+  text-align: justify;
+}
+
+.media2 {
+  width: 30%;
+  order: 2;
+}
+
+/* Bai4.5  */
+.Huongdan {
+  column-count: 2;
+}
+
+.Huongdan h3 {
+  break-before: column;
+}
+
+/* Bai4.6 */
+.contact {
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.contact div {
+  display: inline-block;
+  border: 1px solid #ed4190;
+  border-radius: 5px;
+  padding-top: 5px;
+  width: 24%;
+
 }

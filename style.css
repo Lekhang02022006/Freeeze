@@ -1,5 +1,6 @@
+/* Bai 2.1:Header */
 header {
-  background-image: url("images/header/header.png");
+  background-image: url(images/trangchu/header.png);
   height: 100px;
   position: relative;
 }
@@ -13,7 +14,6 @@ header {
   height: 100px;
   position: absolute;
   top: -30px;
-
   animation: slideimg1 3s ease forwards;
 }
 
@@ -21,6 +21,7 @@ header {
   0% {
     left: 80%;
   }
+
   100% {
     left: 30%;
   }
@@ -37,6 +38,7 @@ header {
   0% {
     left: 80%;
   }
+
   100% {
     left: 45%;
   }
@@ -53,17 +55,20 @@ header {
   0% {
     left: 80%;
   }
+
   100% {
     left: 63%;
   }
 }
 
+/* Bai 2.2:Navigation */
 nav {
   margin-top: 20px;
   display: flex;
-  gap: 3px;
-  justify-content: flex-start;
-  position: absolute;
+
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   padding: 3px;
 }
 
@@ -71,13 +76,14 @@ nav {
   /* Duong vien */
   border: 1px solid white;
 
-  /* khoang dem */
+  /* Khoang dem */
   padding: 2px 4px;
 
   /* Chieu cao */
   height: 20px;
   display: inline-block;
-  /* Dinh format van ban */
+
+  /* Format van ban */
   text-align: center;
   color: #ed4190;
   font-size: 17px;
@@ -87,6 +93,9 @@ nav {
 
   /* Trang tri van ban */
   text-decoration: none;
+
+  /* Cho dep them ti ne */
+  border-radius: 5px;
 }
 
 /* Re chuot */
@@ -95,7 +104,7 @@ nav {
   color: #fff;
 }
 
-/* Ô tìm kiếm */
+/* O tim kiem */
 .search {
   padding: 3px;
   float: right;
@@ -117,4 +126,106 @@ nav {
   background-color: #cddc39;
   display: inline-block;
   text-align: center;
+}
+
+/* Bai 2.3:Footer */
+footer {
+  margin-top: 2px;
+  border: 1px solid #ccc7c8;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+footer p a {
+  color: #ed4190;
+  text-decoration: none;
+}
+
+.back-to-top {
+  right: 10px;
+  bottom: 5px;
+  width: 50px;
+  position: fixed;
+  background-color: #ed4190;
+  z-index: 100;
+  border-radius: 25%;
+}
+
+/* 2.4 title */
+h1 {
+  margin: 12px 0 16px;
+  color: #ed4190;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  height: 34px;
+  text-align: center;
+}
+
+h2 {
+  margin: 5px 0 10px;
+  color: #F9086D;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  height: 28px;
+}
+
+h3 {
+  margin: 5px 0 10px;
+  color: #F9086D;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  height: 24px;
+  align-items: center;
+  text-transform: inherit;
+}
+
+/* Bai4.4 Gioi Thieu */
+.post {
+  display: flex;
+  gap: 1%;
+  align-items: flex-start;
+}
+
+.media {
+  width: 30%;
+}
+
+.content {
+  width: 69%;
+  text-align: justify;
+}
+
+.media2 {
+  width: 30%;
+  order: 2;
+}
+
+/* Bai4.5  */
+.Huongdan {
+  column-count: 2;
+}
+
+.Huongdan h3 {
+  break-before: column;
+}
+
+/* Bai4.6 */
+.contact {
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.contact div {
+  display: inline-block;
+  border: 1px solid #ed4190;
+  border-radius: 5px;
+  padding-top: 5px;
+  width: 24%;
+
 }

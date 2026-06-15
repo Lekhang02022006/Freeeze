@@ -1,0 +1,98 @@
+header {
+    background-image: url(images/trangchu/header.png);
+    height: 100px;
+    position: relative;
+}
+
+#logo {
+    height: 36px;
+    display: flex;
+}
+
+#header1 {
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation: slideimg1 3s ease forwards;
+}
+
+@keyframes slideimg1 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+#header2{
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    animation: slideimg2 3s ease forwards;
+}
+
+@keyframes slideimg2 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+#header3{
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    animation: slideimg3 3s ease forwards;
+}
+
+@keyframes slideimg3 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 63%;
+    }
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    position: absolute;
+    padding: 3px;
+}
+
+.nav-links a {
+    /* Duong vien */
+    border: 1px solid white; 
+
+    /* Khoang dem */
+    padding: 2px 4px;
+
+    /* Chieu cao */
+    height: 20px;
+    display: inline-block;
+
+    /* Format van ban */
+    text-align: center;
+    color: #ed4190;
+    font-size: 17px;
+
+    /* Mau nen */
+    background-color: #ffff80;
+
+    
+
+    /* Trang tri van ban */
+    text-decoration: none;
+}
+
+/* Re chuot */
+.nav-links a:hover {
+    background-color: #ed4190;
+    color: #fff;
+}

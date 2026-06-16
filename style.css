@@ -1,8 +1,16 @@
 /* Bai 2.1:Header */
 header {
-  background-image: url(images/trangchu/header.png);
+  background-image: url(images/header.png);
   height: 100px;
   position: relative;
+
+}
+
+body {
+  width: 1024px;
+  margin: auto;
+
+  font-family: "Open Sans", sans-serif;
 }
 
 #logo {
@@ -89,7 +97,7 @@ nav {
   font-size: 17px;
 
   /* Mau nen */
-  background-color: #ffff80;
+  background-color: rgba(246, 246, 246, 0.5);
 
   /* Trang tri van ban */
   text-decoration: none;
@@ -161,6 +169,7 @@ h1 {
   font-weight: 300;
   height: 34px;
   text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -170,6 +179,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   height: 28px;
+
 }
 
 h3 {
@@ -197,6 +207,8 @@ h3 {
 .content {
   width: 69%;
   text-align: justify;
+  margin-bottom: 5px;
+  padding: 0px 5px;
 }
 
 .media2 {
@@ -227,5 +239,57 @@ h3 {
   border-radius: 5px;
   padding-top: 5px;
   width: 24%;
+
+}
+
+/* Bai5 */
+section {
+  display: flex;
+  margin: 0;
+  padding: 0px;
+
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+
+  flex-wrap: wrap;
+
+
+}
+
+ section h2 {
+  text-align: center;
+}
+
+section>div {
+  display: flex;
+  margin: 3px;
+  padding: 0;
+  border: 1px solid #dbd7d9;
+  border-radius: 5px;
+  /* Chia đều không gian */
+  flex: 1 1 0;
+
+  /* theo chieu doc */
+  flex-direction: column;
+  text-align: justify;
+  justify-content: flex-end;
+    background: linear-gradient(0deg,
+      rgba(205, 220, 57, 1) 0%,
+      rgba(205, 220, 57, 0) 10%);
+
+}
+
+section div img {
+  display: block;
+  margin: auto;
+}
+span {
+  padding: 0px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
 
 }
